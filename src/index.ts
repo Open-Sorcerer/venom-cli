@@ -12,7 +12,7 @@ const option: string = process.argv[2];
 
 if (!availableOptions.includes(option)) {
   console.log(
-    `Invalid operation. Available operations are: ${availableOptions}`
+    chalk.red(`Invalid operation. Available operations are: ${availableOptions}`)
   );
   process.exit(-1);
 }

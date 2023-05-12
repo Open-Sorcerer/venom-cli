@@ -1,5 +1,8 @@
 import { TonClient } from "@eversdk/core";
 import { libNode } from "@eversdk/lib-node";
+import chalk from 'chalk';
+import chalkAnimation from 'chalk-animation';
+
 // @ts-ignore
 import inquirer, { Answers, QuestionCollection } from "inquirer";
 import fs from "fs";
@@ -13,7 +16,7 @@ export default async function createNewWallet() {
 
   const questions = [
     {
-      message: "Do you want to save the private key to a file?",
+      message: chalk.blue("Do you want to save the private key to a file?"),
       name: "save",
       type: "confirm",
     },
@@ -23,7 +26,7 @@ export default async function createNewWallet() {
   if (results.save) {
     const questions2 = [
       {
-        message: "Enter the file name",
+        message: chalk.yellow("Enter the file name:\t"),
         name: "filename",
         type: "input",
       },
@@ -39,6 +42,6 @@ export default async function createNewWallet() {
   } else {
     console.log("Private key not saved.");
   }
-
+  
   client.close();
 }
