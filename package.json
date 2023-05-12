@@ -12,9 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@eversdk/core": "^1.42.1",
+    "@eversdk/lib-node": "^1.42.1",
     "chalk": "^5.2.0",
     "chalk-animation": "^2.0.3",
     "figlet": "^1.6.0",
+    "fs": "^0.0.1-security",
     "inquirer": "^9.2.2"
   },
   "devDependencies": {
