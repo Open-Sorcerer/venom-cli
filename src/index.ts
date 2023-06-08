@@ -6,7 +6,7 @@ import chalk from "chalk";
 import figlet from "figlet";
 import createNewWallet from "./createWallet";
 import createFrontend from "./createFrontend";
-import trackAddress from "./trackAddress";
+import track from "./trackAddress";
 const availableOptions: string[] = [
   "create",
   "create-frontend",
@@ -40,7 +40,7 @@ switch (option) {
     createFrontend();
     break;
   case "track":
-    trackAddress();
+    track();
     break;
   case "withdraw":
     console.log(chalk.magentaBright("withdraw"));
