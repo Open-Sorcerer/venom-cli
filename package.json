@@ -16,6 +16,7 @@
     "@eversdk/lib-node": "^1.42.1",
     "chalk": "^5.2.0",
     "chalk-animation": "^2.0.3",
+    "child_process": "^1.0.2",
     "figlet": "^1.6.0",
     "fs": "^0.0.1-security",
     "inquirer": "^9.2.2",

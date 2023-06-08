@@ -5,22 +5,23 @@ import chalk from "chalk";
 // const figlet = require('figlet');
 import figlet from "figlet";
 import createNewWallet from "./createWallet";
-const availableOptions: string[] = ["create", "deposit", "withdraw"];
+import createFrontend from "./createFrontend";
+const availableOptions: string[] = ["create", "create-frontend", "withdraw"];
 
 // second argument should be the selected option
 const option: string = process.argv[2];
 
 if (!availableOptions.includes(option)) {
   console.log(
-    chalk.red(`Invalid operation. Available operations are: ${availableOptions}`)
+    chalk.red(
+      `Invalid operation. Available operations are: ${availableOptions}`
+    )
   );
   process.exit(-1);
 }
 
 console.log(
-  chalk.magentaBright(
-    figlet.textSync(`Venom ${option}`, { horizontalLayout: "full" })
-  )
+  chalk.magentaBright(figlet.textSync(`Venom`, { horizontalLayout: "full" }))
 );
 
 switch (option) {
@@ -29,8 +30,8 @@ switch (option) {
     console.log(chalk.magentaBright("create"));
     createNewWallet();
     break;
-  case "deposit":
-    console.log(chalk.magentaBright("deposit"));
+  case "create-frontend":
+    createFrontend();
     break;
   case "withdraw":
     console.log(chalk.magentaBright("withdraw"));
