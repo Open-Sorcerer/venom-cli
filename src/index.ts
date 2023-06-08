@@ -6,7 +6,13 @@ import chalk from "chalk";
 import figlet from "figlet";
 import createNewWallet from "./createWallet";
 import createFrontend from "./createFrontend";
-const availableOptions: string[] = ["create", "create-frontend", "withdraw"];
+import trackAddress from "./trackAddress";
+const availableOptions: string[] = [
+  "create",
+  "create-frontend",
+  "track",
+  "withdraw",
+];
 
 // second argument should be the selected option
 const option: string = process.argv[2];
@@ -32,6 +38,9 @@ switch (option) {
     break;
   case "create-frontend":
     createFrontend();
+    break;
+  case "track":
+    trackAddress();
     break;
   case "withdraw":
     console.log(chalk.magentaBright("withdraw"));
