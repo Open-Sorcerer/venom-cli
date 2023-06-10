@@ -1,5 +1,4 @@
 import chalk from "chalk";
-import chalkAnimation from "chalk-animation";
 import { exec } from "child_process";
 
 // @ts-ignore

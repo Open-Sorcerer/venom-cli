@@ -1,10 +1,8 @@
 import chalk from "chalk";
 import chalkAnimation from "chalk-animation";
-import { exec } from "child_process";
 
 // @ts-ignore
-import inquirer, { Answers, QuestionCollection } from "inquirer";
-import fs from "fs";
+import inquirer from "inquirer";
 
 export default async function track() {
   const questions0 = [

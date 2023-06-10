@@ -1,5 +1,4 @@
 import { TonClient, signerKeys } from "@eversdk/core";
-import { Account } from "@eversdk/appkit";
 import { libNode } from "@eversdk/lib-node";
 import chalk from "chalk";
 import chalkAnimation from "chalk-animation";
