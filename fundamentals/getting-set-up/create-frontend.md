@@ -7,7 +7,7 @@ To create a frontend for your Venom blockchain project, follow the steps below:
 1. Run the CLI tool and run the command&#x20;
 
 ```
-venom create-frontend 
+venom-advanced-cli create-frontend 
 ```
 
 2. You will be prompted to choose the framework you want to use for your frontend. Currently, the supported options are "NextJS" and "ReactJS". Use the arrow keys to navigate the options and press Enter to make your selection.

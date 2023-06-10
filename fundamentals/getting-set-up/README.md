@@ -12,13 +12,15 @@ description: >-
 
 Installation command&#x20;
 
-npm install -g&#x20;
+npm install -g venom-advanced-cli
 
 </details>
 
 <details>
 
 <summary>Step 2: Play </summary>
+
+
 
 All the functions are now accessible to you !!
 

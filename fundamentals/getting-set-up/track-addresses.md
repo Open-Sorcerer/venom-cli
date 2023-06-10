@@ -7,7 +7,7 @@ To track addresses and transactions using the CLI tool, follow the steps below:
 1. Run the function&#x20;
 
 ```
-venom track
+venom-advanced-cli track
 ```
 
 2. You will be prompted to choose the network on which you want to track. Currently, the supported options are "Devnet" and "Custom RPC". Use the arrow keys to navigate the options and press Enter to make your selection.
