@@ -4,24 +4,12 @@
 
 This is the documentation of the advanced CLI tool for the Venom blockchain. We created this tool to help speed up your Venom development. This tool helps you create frontend boilerplates and also interact with the Venom Network right from your command line interface.&#x20;
 
-## Quick links
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+## Documentation
+https://open-sorcerer.gitbook.io/venom-cli/
 
-{% content-ref url="overview/our-features.md" %}
-[our-features.md](overview/our-features.md)
-{% endcontent-ref %}
+## Frontend Repos
 
-## Get Started
+https://github.com/Open-Sorcerer/Venom-Next 
+https://github.com/Open-Sorcerer/venom-vite-react
 
-We've put together some helpful guides for you to get setup with our product quickly and easily.
-
-{% content-ref url="fundamentals/getting-set-up/" %}
-[getting-set-up](fundamentals/getting-set-up/)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/getting-set-up/setting-permissions.md" %}
-[setting-permissions.md](fundamentals/getting-set-up/setting-permissions.md)
-{% endcontent-ref %}
