@@ -6,8 +6,8 @@ This is the documentation of the advanced CLI tool for the Venom blockchain. We 
 
 ## Quick links
 
-{% content-ref url="overview/what-you-can-do-with-the-tool.md" %}
-[what-you-can-do-with-the-tool.md](overview/what-you-can-do-with-the-tool.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="overview/our-features.md" %}

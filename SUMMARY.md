@@ -4,7 +4,6 @@
 
 ## Overview
 
-* [💡 What you can do with the tool](overview/what-you-can-do-with-the-tool.md)
 * [✨ Our Features](overview/our-features.md)
 
 ## Fundamentals
