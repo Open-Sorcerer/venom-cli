@@ -1,16 +1,26 @@
 {
-  "name": "mark1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "venom-advanced-cli",
+  "version": "0.1.2",
+  "description": "CLI tool for interacting with Venom ecosystem",
+  "main": "./dist/index.js",
   "type": "module",
   "scripts": {
     "start": "ts-node --esm src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://open-sorcerer.gitbook.io/venom-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Open-Sorcerer/venom-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "venom",
+    "npmtool"
+  ],
+  "author": "Open Sorcerer",
+  "license": "MIT",
   "dependencies": {
     "@eversdk/core": "^1.42.1",
     "@eversdk/lib-node": "^1.42.1",
@@ -26,5 +36,11 @@
     "@types/chalk-animation": "^1.6.1",
     "@types/node": "^18.15.0",
     "typescript": "^4.9.5"
+  },
+  "bugs": {
+    "url": "https://github.com/Open-Sorcerer/venom-cli/issues"
+  },
+  "bin": {
+    "venom-advanced-cli": "./dist/index.js"
   }
 }
