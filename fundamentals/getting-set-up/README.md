@@ -1,8 +1,14 @@
+---
+description: >-
+  This section will walk you through the initial steps to install and set up the
+  tool, allowing you to leverage its powerful features efficiently.
+---
+
 # 🛠 Getting set up
 
 <details>
 
-<summary>Step1: Creating your organization</summary>
+<summary>Step1: Installation</summary>
 
 
 
