@@ -1,11 +1,15 @@
-# 📝 Setting permissions
+# 📝 Create Wallet
 
-{% hint style="info" %}
-**GitBook tip:** your product docs aren't just a reference of all your features, use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
+The `create` option in our advanced CLI tool allows you to effortlessly generate a new Venom blockchain wallet. By running this command, a new wallet address and private key will be created for you, enabling secure storage and management of your digital assets.
 
-## Permission levels
+Once you have installed the CLI tool and are ready to create your wallet, follow the steps below:
 
-There are 4 types of permission levels in the product.
+1. Open your terminal or command prompt and navigate to the directory where the CLI tool is installed.
+2. Run the following command:&#x20;
 
-<table><thead><tr><th width="180">Role</th><th>Capabilities</th></tr></thead><tbody><tr><td>Administrator</td><td>Has all admin privileges</td></tr><tr><td>Editor</td><td>Can edit posts</td></tr><tr><td>Viewer</td><td>Can only view posts</td></tr><tr><td>Guest</td><td>Can only view posts they are inivted to</td></tr></tbody></table>
+```
+venom create
+```
+
+3. This command triggers the wallet creation process.
+4. Later it asks if you want to store it locally. Keep the funds SAFU.&#x20;

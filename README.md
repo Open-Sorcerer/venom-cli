@@ -1,14 +1,8 @@
----
-description: >-
-  This is the documentation of the advanced CLI tool for the Venom blockchain.
-  We created this tool to help speed up your Venom development.
----
-
 # 👋 Welcome to Venom Advanced CLI
 
 ## Overview
 
-This tool helps you create frontend boilerplates and also interact with the Venom Network right from your command line interface.&#x20;
+This is the documentation of the advanced CLI tool for the Venom blockchain. We created this tool to help speed up your Venom development. This tool helps you create frontend boilerplates and also interact with the Venom Network right from your command line interface.&#x20;
 
 ## Quick links
 

@@ -8,32 +8,18 @@ description: >-
 
 <details>
 
-<summary>Step1: Installation</summary>
+<summary>Step 1: Plug</summary>
 
+Installation command&#x20;
 
-
-</details>
-
-<details>
-
-<summary>Step 2: Inviting your team</summary>
-
-
+npm install -g&#x20;
 
 </details>
 
 <details>
 
-<summary>Step 3: Making your first post</summary>
+<summary>Step 2: Play </summary>
 
-
-
-</details>
-
-<details>
-
-<summary>Step 4: Publishing a post</summary>
-
-
+All the functions are now accessible to you !!
 
 </details>
