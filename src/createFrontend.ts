@@ -29,17 +29,6 @@ export default async function createFrontend() {
   const results2 = await inquirer.prompt(questions2);
   console.log("Creating frontend with", results2.projectName);
 
-  // const questions3 = [
-  //   {
-  //     message: chalk.yellow("Got any choice for package manager?"),
-  //     name: "packageManager",
-  //     type: "list",
-  //     choices: ["npm", "yarn", "pnpm", "Just make it work"],
-  //   },
-  // ];
-
-  // const results3 = await inquirer.prompt(questions3);
-
   switch (results.framework) {
     case "NextJS":
       console.log(chalk.magentaBright("NextJS"));
@@ -57,34 +46,33 @@ export default async function createFrontend() {
           console.log(chalk.blueBright(stderr));
         }
       );
-      // if (results3.packageManager === "Just make it work") {
-      //   exec(
-      //     `cd ${results2.projectName} && npm install && npm run dev`,
-      //     (err, stdout, stderr) => {
-      //       if (err) {
-      //         console.log(chalk.redBright(err));
-      //         return;
-      //       }
-      //       console.log(chalk.greenBright(stdout));
-      //       console.log(chalk.blueBright(stderr));
-      //     }
-      //   );
-      // } else {
-      //   exec(
-      //     `cd ${results2.projectName} && ${results3.packageManager} install && ${results3.packageManager} run dev`,
-      //     (err, stdout, stderr) => {
-      //       if (err) {
-      //         console.log(chalk.redBright(err));
-      //         return;
-      //       }
-      //       console.log(chalk.greenBright(stdout));
-      //       console.log(chalk.blueBright(stderr));
-      //     }
-      //   );
-      // }
       break;
     case "ReactJS":
       console.log(chalk.magentaBright("ReactJS"));
+      // execute git clone command
+      const questions3 = [
+        {
+          message: chalk.yellow("Enter the project name:\t"),
+          name: "projectName",
+          type: "input",
+        },
+      ];
+
+      const results3 = await inquirer.prompt(questions3);
+      console.log("Creating frontend with", results3.projectName);
+
+      exec(
+        `git clone https://github.com/Open-Sorcerer/venom-vite-react ${results3.projectName}`,
+        (err, stdout, stderr) => {
+          if (err) {
+            console.log(chalk.redBright(err));
+            return;
+          }
+          console.log(chalk.greenBright(stdout));
+          console.log(chalk.blueBright(stderr));
+        }
+      );
+
       break;
   }
 }
